@@ -1,0 +1,73 @@
+{
+    "name": "ʟᴏʀᴅ ダ ᴍᴜsɪᴄ",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://graph.org/file/0422eb938dd73ccf3018e.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "AnonX",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "ضـع ايـبـي ايـدي اسـتـخـرجـه مـن هـنـا https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "ضـع ايـبـي هـاش اسـتـخـرجـه مـن هـنـا https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "ضـع تـوكـن الـبـوت اسـتخـرجـه مـن @Botfather",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "ضـع كــود مـونـجـو اسـتـخـرجـه مـن هـنـا https://cloud.mongodb.com",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ضـع ايـدي الـمـطـور",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "ضـع جـلـسـه الـبـايـوجـرام اسـتـخـرجـهـا مـن هـنـا @TTW6BOT",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "ضـع ايـبـي كـي هـيـروكـو مـن اعـدادات حـسـابـك هـيـروكـو",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "اســـم التطبيـــق - نفـس اول مربـع بالقائمـة نسـخ لصـق حـروف انكلـش سمــول〔 صغيـره فقـط 〕..",
+        "value": "",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "ايـدي جـروب الـتـخـزيـن لا تـمـسـح -100 ضـع الايـدي جـانـبـهـا فـقـط",
+        "value": "-100",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
